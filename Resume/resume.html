@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Resume</title>
+	<style>
+		@font-face {
+			font-family: myFirstFont;
+			src: url('font/PingHei-light.ttf')
+		}
+		body {
+			background: url(pic/block.png);
+			background-attachment:fixed;
+			font-family:myFirstFont;
+			background-color: #ffffff;
+		}
+		#page {
+			background: url(pic/pic2.jpg);
+			width: 1000px;
+			margin: 0 auto;
+			border-radius: 10px;
+			box-shadow: 1px 5px 20px #bbbbbb;
+		}
+		#page,#masthead,#pageFooter {
+			background-color: transparent;
+		}
+		#masthead {
+			color: white;
+			padding: 40px;
+			text-align: center;
+			border-radius:10px;
+		}
+		#masthead h1{
+			width: 150px;
+			margin:0 auto;
+			border-bottom-style: solid;
+			border-color: white;
+			border-width: 1.5px;
+		}
+		#information {
+			background-color: #efefef;
+			width: 250px;
+			float: left;
+			padding-right: 5px;
+			padding-left: 20px;
+			margin-bottom: -10px;
+			margin-top: -10px;
+			margin-left: 2px;
+			box-shadow: inset -5px 0 30px #aaaaaa;
+		}
+		#text1,#text2,#text3,#text4 {
+			float: left;
+		}
+		#text2,#text4 {
+			margin-left: 60px;
+			color: #333333;
+		}
+		#textA,#textB,#textC {
+			clear: both;
+		}
+		#informationFooter {
+			clear: both;
+			margin-right: 20px;
+			border-top-style: solid; 
+			border-width: thin;
+		}
+		#mainContent{
+			background-color: #f9f9f9;
+			float: left;
+			width: 721px;
+			margin-bottom: -10px;
+			margin-top: -10px;
+			margin-right: 2px;
+		}
+		#letterContent,#skillContent,#expContent {
+			clear: both;
+		}
+		#mainContentArticle,#letterContent,#expContent {
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+		#mainContent,#information {
+			height: 1300px;
+		}
+		#pageFooter {
+			clear: both;
+			height: 50px;
+			padding: 10px;
+			border-radius:10px;
+			color: white;
+			text-align: center;
+			font-family: sans-serif;
+			font-size: .2em;
+		}
+		#img {
+			width: 230px;
+			height: 230px;
+			margin-left: 0;
+			margin-top: 0;
+		}
+		#informationHeader h2 {
+			margin-bottom: 0;
+		}
+		#information h2,#mainContent h1 {
+			float: left;
+			padding-right:20px; 
+			border-bottom-style: solid;
+			border-width: 2px;
+			border-color: #3c88e6;
+		}
+		#button {
+			border-style: solid;
+		}
+		#button:hover {
+			border-bottom-color: #3c88e6; 
+		}
+		#button:active {
+			background-color: #3c88e6;
+			color: white;
+		}
+		#email,#phone {
+			border-radius: 10px;
+			border-width: 0px;
+		}
+	</style>
+</head>
+<body>
+	<div id="page">
+	<header id="masthead">
+		<h1>个人简历</h1>
+	</header>
+	<div id="information">
+		<header id="informationHeader">
+			<h2>个人信息</h2>
+		</header>
+		<figure id="img">
+			<img src="pic/pic1.png" width=230>
+		</figure>
+		<article id="informationArticle">
+		<br>
+		<div id="textA">
+			<div id="text1">
+				<p>姓名</p>
+				<p>性别</p>
+				<p>出生</p>
+				<p>居住</p>
+				<p>户籍</p>
+				<p>学历</p>
+				<p>学校</p>
+				<p>专业</p>
+				<p>英语</p>
+			</div>
+			<div id="text2">
+				<p>张婷</p>
+				<p>女</p>
+				<p>1992.08.23</p>
+				<p>江苏省苏州市</p>
+				<p>江苏省常州市</p>
+				<p>本科</p>
+				<p>师范学院</p>
+				<p>计算机科学与技术</p>
+				<p>英语六级</p>
+			</div>
+			</div>
+		</article>
+		<footer id="informationFooter">
+			<h2>联系方式</h2>
+			<div id="textB">
+			<div id="text3">
+				<p>手机</p>
+				<p>QQ</p>
+				<p>邮箱</p>
+			</div>
+			<div id="text4">
+				<p>18551133163</p>
+				<p>593022384</p>
+				<p>593022384@qq.com</p>
+			</div>
+			</div>
+			<div id="textC">
+				<p>联系我</p>
+				<form action="#" method="get">
+				<label for="email">E-mail:</label>
+				<br>
+				<input type="email" name="user_email" id="email" pattern="/^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$" />
+				<br>
+				<label for="phone">手机：</label>
+				<br>
+				<input type="tel"  maxlength="11" name="user_phone" id="phone">
+				<br>
+				<br>
+				<input type="submit" value="SEND" id="button" />
+				</form>
+				<br><br>
+			</div>
+		</footer>
+	</div>
+	<div id="mainContent">
+		<article id="mainContentArticle">
+			<section id="letter">
+				<header id="letterHeader">
+					<h1>求职信</h1>
+				</header>
+				<div id="letterContent">
+					<p>Dear Sir/Madam,</p>
+					<p>My name is TingZhang and I will graduate from Xi’an University in the year of 2010. My major is secretary in English department. 
+					</p>
+					<p>It’s my great pleasure to have this opportunity to improve our mutual understanding. During the three –year college study，I tried my best to learn all kinds of knowledge，and weigh the hard work of my teachers and myself; I have mastered English listening，speaking，writing and reading skills.
+					</p>
+					<p>Moreover， I have a good command of Business English and the basic theory， public relationship of secretary. Meanwhile, in order to enlarge my knowledge, I always read some newspapers and magazines about business and trade， and I used to do some representative of business in my spare time. At the same time, I learnt computer skills during my summer vacation，and now I’m familiar with Office 2000. It is my three –year college life that makes me form my life attitude. Also my three-year college life that makes me rich in knowledge，and it’s also my three-year college life that makes me form my life attitude. Honesty, Trust, Diligence is principle of how to be a man.
+					</p>
+					<p>As a college graduate，I believe “where there is a will, there is a way”, and I will try my best to do a good job in my business. So I sincerely hope that I can make a position in your company so that I can serve for the company in the future. 
+					</p>
+					<p>Yours faithfully, </p>
+					<p>Qiing Zhang</p>
+
+				</div>
+			</section>
+			<section id="skill">
+				<header id="skillHeader">
+					<h1>个人技能</h1>
+				</header>
+				<div id="skillContent">
+					<ul>
+						<li>熟练HTML5，CSS3，JavaScript技术，开发符合W3C标准的前端网页。</li>
+						<br>
+						<li>熟练使用jQuery，bootstrap等前端框架技术。</li>
+						<br>
+						<li>熟悉sass工具，扩展css功能,提高css功能和效率。 </li>
+						<br>
+						<li>熟悉Ajax的运行机制，能使用ajax进行数据交互。</li>
+						<br>
+						<li>熟练使用PS，墨刀等工具，能快速切图和搭建原型图。 </li>
+						<br>
+						<li>熟悉W3C标准，对表现与数据分离、Web语义化等有较为深刻的理解。</li>
+						<br>
+						<li>精通流体布局和弹性布局，能适应各种分辨率。 </li>
+						<br>
+						<li>熟悉各种主流浏览器的差异性，有解决主流浏览器的兼容性问题的经验。</li>
+						<br>
+					</ul>
+				</div>
+			</section>
+			<section id="exp">
+				<header id="expHeader">
+					<h1>技术经验</h1>
+				</header>
+				<div id="expContent">
+					<p>开发时间：2015 /12--2016 /5</p>
+					<p>开发工具：IntelliJ IDEA，sublime text</p>
+					<p>项目描述：该项目是关于汽车加盟店内部使用的汽车保养网站。加盟店主要有汽车保养下单，排班，考勤，申请补货等操作功能，以及门店信息，订单信息，库存心等查看的功能。总店有商品，门店，采购，补货，预警，财务，仓库等功能管理。 加盟店端采用原生搭建，总店端采用metronic+bootstrap框架。 该项目是内部员工使用。
+					</p>
+					<p>责任描述：</p>
+					<ol>
+					<li>根据项目需求，快速构造原型图
+					</li>
+					<li>参与页面的部分设计
+					</li>
+					<li>负责加盟店的前端网站搭建以及总店端的页面修改
+					</li>
+					</ol>
+					<p>项目完成情况</p>
+					<progress value="80" max="100">
+					</progress>
+					<br><br>
+				</div>
+			</section>
+		</article>
+	</div>
+	<footer id="pageFooter">
+		<p>BY  信管1班  2014122122  许蓓豪 </p>
+	</footer>
+	</div>
+</body>
+</html>
